@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quran|Login Page</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/loginStyle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">ۛ اسلامنا</a>
+          <ul class="navbar">
+            <li><a href="register.html"> تسجيل حساب</a></li>
+            <li><a href="login.html">تسجيل الدخول</a></li>
+          </ul>
+          <div class="bars">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <section class="section-form">
+      <h2 class="form-title">تسجبل حساب جديد</h2>
+      <form>
+        <input type="text" placeholder="اكتب الاسم" id="username" />
+        <input type="email" placeholder="اكتب الايميل" id="email" />
+        <input type="password" placeholder="اكتب الباسورد" id="password" />
+        <input type="submit" value="ارسال" id="registerBtn" />
+      </form>
+    </section> -->
+    <section class="section-form">
+      <div class="container">
+        <div class="wrapper">
+          <div class="title"><span>تسجيل حساب جديد</div>
+          <form>
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <input
+                type="text"
+                placeholder="الاسم بالكامل"
+                required
+                id="username"
+              />
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                placeholder="رقم الهاتف او البريد الاكتروني"
+                required
+                id="email"
+              />
+            </div>
+            <div class="row">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                placeholder="الباسورد"
+                id="password"
+                required
+              />
+            </div>
+            <div class="pass"><a href="#" id="forgetPass">هل نسيت الباسورد؟</a></div>
+            <div class="row button">
+              <input type="submit" value="ارسال" id="registerBtn" />
+            </div>
+            <div class="signup-link">
+              لديك حساب بالفعل؟ <a href="login.html">سجل الدخول الان</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>
