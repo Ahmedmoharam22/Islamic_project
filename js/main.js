@@ -96,7 +96,7 @@ let cards = document.querySelector(".cards");
 getDataPrayTime();
 function getDataPrayTime() {
   fetch(
-    "http://api.aladhan.com/v1/timingsByCity?city=mansoura&country=egypt&method=8"
+    " http://api.aladhan.com/v1/timingsByCity?city=Dubai&country=United Arab Emirates&method=8"
   )
     .then((res) => res.json())
     .then((data) => {
@@ -117,7 +117,8 @@ function getDataPrayTime() {
       }
     });
 }
-
+//  "http://api.aladhan.com/v1/timingsByCity?city=mansoura&country=egypt&method=8" القديم
+//  http://api.aladhan.com/v1/timingsByAddress?address=Regents Park Mosque, London, UK الجديد
 // scroll bottom
 let scrollBtn = document.querySelector(".scrollBottom");
 window.addEventListener("scroll", () => {
@@ -140,5 +141,3 @@ let navbar = document.querySelector(".navbar");
 barsBtn.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
-
-
